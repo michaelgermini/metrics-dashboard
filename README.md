@@ -1,185 +1,211 @@
-# Metrics Dashboard - Tableau de bord SaaS
+# 📊 Metrics Dashboard
 
-Un dashboard SaaS moderne pour visualiser des données e-commerce, cryptomonnaies et météo avec React et TypeScript.
+A modern SaaS metrics dashboard built with React, featuring real-time data visualization, cryptocurrency tracking, weather information, and comprehensive e-commerce analytics.
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-### Web (React)
-- **Graphiques interactifs** avec Recharts
-- **Filtres dynamiques** avec React Query
-- **Thème clair/sombre** avec persistance
-- **Design responsive** avec Tailwind CSS
-- **Navigation fluide** avec React Router
+### 📈 **Dashboard Overview**
+- **Real-time metrics** with beautiful visualizations
+- **Responsive design** that works on all devices
+- **Dark/Light theme** toggle
+- **Interactive charts** using Recharts
+- **Real-time data** from external APIs
 
-### Sections disponibles
-- **Vue d'ensemble** : KPIs principaux et aperçu global
-- **E-commerce** : Métriques détaillées, graphiques de revenus, top produits
-- **Cryptomonnaies** : Données en temps réel via CoinGecko API
-- **Météo** : Conditions météorologiques par ville
-- **Paramètres** : Configuration de l'application
+### 🛒 **E-commerce Analytics**
+- Revenue tracking and trends
+- Order management and conversion rates
+- Product performance analysis
+- Category-wise sales breakdown
+- Customer insights and metrics
 
-## 🛠️ Technologies
+### 💰 **Cryptocurrency Tracking**
+- Real-time crypto prices from CoinGecko API
+- Price change indicators
+- Market cap and volume data
+- Top cryptocurrency monitoring
 
-- **Frontend** : React 18 + TypeScript
-- **Styling** : Tailwind CSS + Lucide React
-- **Graphiques** : Recharts
-- **État** : React Query (TanStack Query)
-- **Routing** : React Router DOM
-- **Build** : Vite
-- **Tests** : Jest + React Testing Library
+### 🌤️ **Weather Information**
+- Real-time weather data from OpenWeatherMap API
+- Multi-city weather tracking
+- Temperature, humidity, and wind speed
+- Weather condition displays
 
-## 📦 Installation
+### ⚙️ **Settings & Customization**
+- Theme preferences (Light/Dark mode)
+- Currency selection
+- Language settings
+- Notification preferences
 
-1. **Cloner le projet**
-```bash
-git clone <repository-url>
-cd metrics-dashboard
-```
+## 🛠️ Tech Stack
 
-2. **Installer les dépendances**
-```bash
-npm install
-```
+### **Frontend**
+- **React 18** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** for styling
+- **Recharts** for data visualization
+- **React Router DOM** for navigation
+- **Lucide React** for icons
 
-3. **Construire le package shared**
-```bash
-cd shared && npm run build && cd ..
-```
+### **State Management & Data Fetching**
+- **React Query (TanStack Query)** for server state
+- **React Context** for theme management
+- **Axios** for API calls
 
-4. **Lancer le serveur de développement**
-```bash
-npm run dev
-```
+### **Development Tools**
+- **ESLint** for code linting
+- **Prettier** for code formatting
+- **Jest** & **React Testing Library** for testing
+- **TypeScript** for type safety
 
-L'application sera accessible sur `http://localhost:3000`
+### **APIs Integration**
+- **CoinGecko API** for cryptocurrency data
+- **OpenWeatherMap API** for weather information
+- **Mock data** for e-commerce analytics
 
-## 🔧 Scripts disponibles
-
-```bash
-# Développement
-npm run dev          # Lancer le serveur de développement
-npm run build        # Construire pour la production
-npm run preview      # Prévisualiser la build
-
-# Tests
-npm run test         # Lancer les tests
-npm run test:watch   # Tests en mode watch
-
-# Qualité de code
-npm run lint         # Vérifier le code avec ESLint
-npm run lint:fix     # Corriger automatiquement les erreurs
-npm run format       # Formater le code avec Prettier
-```
-
-## 🌐 APIs intégrées
-
-### CoinGecko API
-- Données cryptomonnaies en temps réel
-- Prix, market cap, volume
-- Fallback vers données mockées
-
-### OpenWeatherMap API (optionnel)
-- Données météorologiques
-- Nécessite une clé API dans `VITE_WEATHER_API_KEY`
-
-## 📱 Structure du projet
+## 📦 Project Structure
 
 ```
 metrics-dashboard/
-├── shared/                 # Types et utilitaires partagés
+├── web/                          # React web application
 │   ├── src/
-│   │   ├── types.ts       # Interfaces TypeScript
-│   │   ├── utils.ts       # Fonctions utilitaires
-│   │   └── index.ts       # Exports
-│   └── package.json
-├── web/                   # Application React
-│   ├── src/
-│   │   ├── components/    # Composants réutilisables
-│   │   ├── pages/         # Pages de l'application
-│   │   ├── hooks/         # Hooks personnalisés
-│   │   ├── services/      # Services API
-│   │   ├── contexts/      # Contextes React
-│   │   └── utils/         # Utilitaires
-│   └── package.json
-└── package.json           # Configuration monorepo
+│   │   ├── components/           # Reusable UI components
+│   │   │   ├── Dashboard/        # Chart and metric components
+│   │   │   └── Layout/           # Layout components
+│   │   ├── pages/                # Page components
+│   │   ├── contexts/             # React contexts
+│   │   ├── hooks/                # Custom React hooks
+│   │   ├── services/             # API services
+│   │   └── utils/                # Utility functions
+│   ├── public/                   # Static assets
+│   └── configuration files       # Vite, TypeScript, etc.
+├── shared/                       # Shared utilities and types
+└── mobile/                       # React Native app (planned)
 ```
 
-## 🎨 Thèmes
+## 🚀 Getting Started
 
-L'application supporte deux thèmes :
-- **Mode clair** : Interface claire et moderne
-- **Mode sombre** : Interface sombre pour réduire la fatigue oculaire
+### Prerequisites
+- **Node.js** (version 18 or higher)
+- **npm** or **yarn**
 
-Le thème est automatiquement sauvegardé dans le localStorage.
+### Installation
 
-## 📊 Données
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/metrics-dashboard.git
+   cd metrics-dashboard
+   ```
 
-### E-commerce (Mock)
-- Revenus, commandes, clients
-- Top produits et catégories
-- Graphiques d'évolution
-- Taux de conversion
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### Cryptomonnaies (API réelle)
-- Prix en temps réel
-- Variations 24h
-- Market cap et volume
-- Images des cryptomonnaies
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-### Météo (API réelle)
-- Température, humidité, vent
-- Conditions météorologiques
-- Recherche par ville
+4. **Open your browser**
+   Navigate to `http://localhost:3001`
 
-## 🧪 Tests
+### Available Scripts
 
 ```bash
-# Lancer tous les tests
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+
+# Testing
+npm run test         # Run tests
+npm run test:watch   # Run tests in watch mode
+
+# Code Quality
+npm run lint         # Run ESLint
+npm run format       # Format code with Prettier
+
+# Mobile (planned)
+npm run mobile       # Start React Native development
+```
+
+## 🌐 API Configuration
+
+### Environment Variables
+Create a `.env` file in the `web` directory:
+
+```env
+# Weather API (optional)
+VITE_WEATHER_API_KEY=your_openweathermap_api_key
+
+# Other configurations
+VITE_API_BASE_URL=https://api.example.com
+```
+
+### API Keys
+- **OpenWeatherMap**: Get your free API key at [OpenWeatherMap](https://openweathermap.org/api)
+- **CoinGecko**: No API key required (free tier)
+
+## 🎨 Customization
+
+### Themes
+The application supports light and dark themes. Theme preference is saved in localStorage.
+
+### Styling
+- **Tailwind CSS** for utility-first styling
+- **Custom CSS variables** for theme colors
+- **Responsive design** with mobile-first approach
+
+### Adding New Pages
+1. Create a new component in `src/pages/`
+2. Add the route in `src/App.tsx`
+3. Update the sidebar navigation in `src/components/Layout/Sidebar.tsx`
+
+## 🧪 Testing
+
+```bash
+# Run all tests
 npm run test
 
-# Tests en mode watch
-npm run test:watch
-
-# Tests avec couverture
+# Run tests with coverage
 npm run test -- --coverage
+
+# Run specific test file
+npm run test -- src/components/Dashboard/MetricCard.test.tsx
 ```
 
-## 🚀 Déploiement
+## 📱 Mobile App (Planned)
 
-### Vercel (recommandé)
-1. Connecter le repository GitHub
-2. Configurer les variables d'environnement
-3. Déployer automatiquement
+The mobile application will be built with React Native and Expo, providing:
+- Simplified dashboard view
+- Push notifications
+- Offline data caching
+- Native device features
 
-### Variables d'environnement
-```env
-VITE_WEATHER_API_KEY=your_openweathermap_api_key
-```
+## 🤝 Contributing
 
-## 📝 TODO
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- [ ] Application mobile React Native
-- [ ] Tests unitaires complets
-- [ ] CI/CD avec GitHub Actions
-- [ ] Plus de graphiques et métriques
-- [ ] Export de données
-- [ ] Notifications push
+## 📄 License
 
-## 🤝 Contribution
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-1. Fork le projet
-2. Créer une branche feature (`git checkout -b feature/AmazingFeature`)
-3. Commit les changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+## 🙏 Acknowledgments
 
-## 📄 Licence
+- **CoinGecko** for cryptocurrency data
+- **OpenWeatherMap** for weather information
+- **Recharts** for beautiful charts
+- **Tailwind CSS** for utility-first styling
+- **Vite** for fast development experience
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+## 📞 Support
 
-## 🙏 Remerciements
+If you have any questions or need help, please open an issue on GitHub or contact the development team.
 
-- [CoinGecko](https://coingecko.com/) pour l'API cryptomonnaies
-- [OpenWeatherMap](https://openweathermap.org/) pour l'API météo
-- [Recharts](https://recharts.org/) pour les graphiques
-- [Tailwind CSS](https://tailwindcss.com/) pour le styling
+---
+
+**Built with ❤️ using React, TypeScript, and modern web technologies**
