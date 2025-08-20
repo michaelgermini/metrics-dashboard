@@ -36,12 +36,12 @@ export const RevenueChart: React.FC<RevenueChartProps> = ({ data, className }) =
           <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
           <XAxis
             dataKey="date"
-            tickFormatter={(value: string) => formatDate(value)}
+            tickFormatter={(value: any) => formatDate(value)}
             stroke="#6B7280"
             fontSize={12}
           />
           <YAxis
-            tickFormatter={formatYAxisTick}
+            tickFormatter={(value: any) => formatYAxisTick(value)}
             stroke="#6B7280"
             fontSize={12}
           />
