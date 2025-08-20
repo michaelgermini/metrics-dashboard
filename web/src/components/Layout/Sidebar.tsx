@@ -8,7 +8,6 @@ import {
   Settings, 
   Moon, 
   Sun,
-  Menu,
   X
 } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';

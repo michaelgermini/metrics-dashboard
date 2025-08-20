@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -38,7 +36,7 @@ export const RevenueChart: React.FC<RevenueChartProps> = ({ data, className }) =
           <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
           <XAxis
             dataKey="date"
-            tickFormatter={formatDate}
+            tickFormatter={(value: string) => formatDate(value)}
             stroke="#6B7280"
             fontSize={12}
           />

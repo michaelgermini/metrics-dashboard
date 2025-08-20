@@ -1,7 +1,7 @@
 import React from 'react';
 import { RefreshCw, TrendingUp, TrendingDown } from 'lucide-react';
 import { useCryptoData } from '../hooks/useApi';
-import { formatCurrency, formatNumber } from '../utils/shared';
+import { formatCurrency } from '../utils/shared';
 
 export const Crypto: React.FC = () => {
   const { data: cryptoData, isLoading, error } = useCryptoData();
