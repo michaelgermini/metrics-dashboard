@@ -220,6 +220,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help, please open an issue on GitHub or contact the development team.
 
+## 👨‍💻 Contact
+
+**Michael Germini**
+- **Email** : michael@germini.info
+- **GitHub** : [@michaelgermini](https://github.com/michaelgermini)
+- **Website** : [upframe.com](http://upframe.com)
+- **YouTube** : [@TerminalZone404](https://youtube.com/@TerminalZone404)
+
 ---
 
 **Built with ❤️ using React, TypeScript, and modern web technologies**
