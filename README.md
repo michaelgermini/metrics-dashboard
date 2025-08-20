@@ -2,6 +2,20 @@
 
 A modern SaaS metrics dashboard built with React, featuring real-time data visualization, cryptocurrency tracking, weather information, and comprehensive e-commerce analytics.
 
+## 🌐 Live Demo
+
+**[🚀 View Live Demo](https://metrics-dashboard-web-8dmp.vercel.app/)**
+
+Experience the full application with real-time data, interactive charts, and responsive design.
+
+## 📊 Project Status
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18.0.0-blue.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue.svg)
+![Vite](https://img.shields.io/badge/Vite-5.0.0-purple.svg)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0.0-38B2AC.svg)
+
 ## 🚀 Features
 
 ### 📈 **Dashboard Overview**
